@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+<body>
+<em><h2>Семенова Алеся,Вариант 13</h2></em>
+</body>
+
+  <canvas id="smile" width="600" height="500">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+   // Рисуем окружность 
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "#698B22";
+     cxt.lineWidth = 1;
+     cxt.arc(50,75,25,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (2,1);
+     cxt.strokeStyle = "#FF1493";
+     cxt.lineWidth = 4;
+     cxt.arc(75,152,50,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#FF1493";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "Lime";
+     cxt.lineWidth = 1;
+     cxt.arc(57,210,8,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "Lime";
+     cxt.lineWidth = 1;
+     cxt.arc(40,210,8,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+          // Рисуем левый глаз 
+     cxt.fillStyle = "#FFD700";
+     cxt.beginPath();
+     cxt.arc(110,40,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем правый глаз 
+     cxt.fillStyle="#FFD700";
+     cxt.beginPath();
+     cxt.arc(180,40,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+
+    
+ 
+
+  </script>
+ </head>
+ <body>
+</html>
