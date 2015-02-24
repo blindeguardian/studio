@@ -1,0 +1,97 @@
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+<h3>Ishmuratova Diana</h3>
+<h3>Variant 7</h3>
+
+  <canvas id="smile" width="500" height="500">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+     // Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,100,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,220,70,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,390,100,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем левый глаз 
+cxt.beginPath();
+     cxt.fillStyle = "#FF69B4";
+     cxt.beginPath();
+     cxt.arc(184,90,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем правый глаз 
+cxt.beginPath();
+     cxt.fillStyle="FF69B4";
+     cxt.beginPath();
+     cxt.arc(216,90,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     
+
+    // Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#000000";
+
+	cxt.fillRect(250,150,105,30);
+
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#000000";
+	cxt.fillRect(45,150,105,30);
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#7B68EE";
+	cxt.fillRect(165,0,70,50);
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#0000FF";
+	cxt.fillRect(40,80,10,360);
+     // Рисуем рот
+cxt.beginPath();
+     cxt.fillStyle="#FF0000";
+
+	cxt.fillRect(175,125,50,3);
+
+// Рисуем нос
+cxt.beginPath();
+ cxt.fillStyle="#FF8C00"; 
+cxt.moveTo(120,110);
+cxt.lineTo(200,115);
+cxt.lineTo(200,100);
+cxt.fill();
+
+
+  </script>
+ </head>
+ <body>
+</html>
