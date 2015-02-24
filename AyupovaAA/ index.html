@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+
+<body>
+<em> <h2> Аюпова А.А  </H2>
+
+<h2> Вариант-2 </h2>
+ </em>
+</body>
+
+  <canvas id="gusen" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('gusen');
+     var cxt = myCanvas.getContext('2d');
+ // Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,200,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,300,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,400,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(500,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(400,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(300,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем левый глаз 
+     cxt.fillStyle = "#000000";
+     cxt.beginPath();
+     cxt.arc(580,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем правый глаз 
+     cxt.fillStyle="#000000";
+     cxt.beginPath();
+     cxt.arc(620,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем нос
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(597, 205);
+     cxt.quadraticCurveTo(600, 205, 607, 205);
+     cxt.stroke();
+// Рисуем рот
+     cxt.strokeStyle = '#FA8072';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(580, 220);
+     cxt.quadraticCurveTo(605, 240, 620, 220);
+     cxt.stroke();
+// Рисуем лев.усик
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+     cxt.lineTo(640,100);
+     cxt.stroke();
+cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+    cxt.lineTo(560,100);
+     cxt.stroke();
+// красим
+      cxt.fillStyle = '#000000';
+      cxt.fill();
+      cxt.lineWidth = 1;
+      cxt.strokeStyle = 'black';
+      cxt.stroke();
+  </script>
+ </head>
+ <body>
+</html>
