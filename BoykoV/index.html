@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Frightened snowman</title>
+<meta charset="utf-8">
+</head>
+<body>
+<em><h2>Бойко В.В.</h2></em>
+</body>
+<canvas id="myCanvas" width="370" height="450">
+<p>Ваш браузер не поддерживает рисование.</p>
+</canvas>
+
+</html>
+
+<script type="text/javascript">
+var myCanvas = document.getElementById('myCanvas');
+var ctx = myCanvas.getContext('2d');
+//первый кругляк
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+ctx.arc(90, 70, 30, 0, Math.PI*2, true);
+ctx.closePath();
+ctx.fillStyle = 'LightBlue';
+ctx.fill();
+ctx.stroke();
+//второй кругляк
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+ctx.arc(90, 150, 50, 40, Math.PI*2, true);
+ctx.closePath();
+ctx.fillStyle = 'LightBlue';
+ctx.fill();
+ctx.stroke();
+//третий кругляк
+ctx.beginPath();
+ctx.scale(1.2, 1);
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+ctx.arc(75, 270, 70, 40, Math.PI*2, true);
+ctx.resetTransform();
+ctx.closePath();
+ctx.fillStyle = 'LightBlue';
+ctx.fill();
+ctx.stroke();
+//шапка
+ctx.beginPath();
+ctx.moveTo(60,50);
+ctx.lineTo(120,50);
+ctx.lineTo(110,10);
+ctx.lineTo(70,10);
+ctx.lineTo(60,50);
+ctx.closePath();
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+//рот
+ctx.beginPath();
+ctx.moveTo(80,80);
+ctx.quadraticCurveTo(90,70,100,80);
+ctx.fillStyle = 'black';
+ctx.closePath();
+ctx.stroke();
+ctx.fill();
+//очи
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+ctx.arc(75, 65, 3, 40, Math.PI*2, true);
+ctx.closePath();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+ctx.arc(105, 65, 3, 45, Math.PI*2, true);
+ctx.closePath();
+ctx.fill();
+//конечности
+ctx.moveTo(40,150);
+ctx.lineTo(30,50);
+ctx.stroke();
+ctx.moveTo(140,150);
+ctx.lineTo(150,50);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(150,450);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(290,240);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(360,290);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(310,240);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(340,250);
+ctx.stroke();
+ctx.moveTo(300,300);
+ctx.lineTo(350,270);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(40,350);
+ctx.lineTo(10,370);
+ctx.lineTo(45,360);
+ctx.lineTo(40,350);
+ctx.stroke();
+ctx.fillStyle = 'orange';
+ctx.fill();
+
+
+</script>
+
+
