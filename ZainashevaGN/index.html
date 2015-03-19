@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>canvas</title>
+<meta charset="utf-8">
+
+<canvas id="smile" width="400" height="400">
+<p>Ваш браузер не поддерживает рисование.</p>
+</canvas>
+
+<em><h2>ЗайнашеваГН</h2></em>
+
+<script type="text/javascript">
+var myCanvas = document.getElementById('smile');
+
+var cxt = myCanvas.getContext('2d');
+
+// Рисуем окружность 
+
+cxt.fillStyle = "#fff";
+cxt.strokeStyle = "#000";
+cxt.beginPath();
+cxt.arc(150,150,35,0,Math.PI*2,true);
+cxt.closePath();
+cxt.stroke();
+cxt.fill();
+
+// Рисуем линии
+
+cxt.moveTo(115,150);
+cxt.lineTo(115,300);
+cxt.stroke();
+
+cxt.moveTo(185,150);
+cxt.lineTo(185,200);
+cxt.stroke();
+
+// Рисуем стрелки
+
+cxt.moveTo(65,300);
+cxt.lineTo(65,375);
+cxt.moveTo(40,325);
+cxt.lineTo(65,300);
+cxt.moveTo(90,325);
+cxt.lineTo(65,300);
+cxt.stroke();
+
+cxt.moveTo(240,200);
+cxt.lineTo(240,275);
+cxt.moveTo(215,250);
+cxt.lineTo(240,275);
+cxt.moveTo(265,250);
+cxt.lineTo(240,275);
+cxt.stroke();
+
+// Рисуем нить
+
+cxt.moveTo(150,115);
+cxt.lineTo(150,25);
+cxt.stroke();
+
+// Рисуем потолок
+cxt.moveTo(25,25);
+cxt.lineTo(275,25);
+cxt.moveTo(25,25);
+cxt.lineTo(50,0);
+cxt.moveTo(50,25);
+cxt.lineTo(75,0);
+cxt.moveTo(75,25);
+cxt.lineTo(100,0);
+cxt.moveTo(100,25);
+cxt.lineTo(125,0);
+cxt.moveTo(125,25);
+cxt.lineTo(150,0);
+cxt.moveTo(150,25);
+cxt.lineTo(175,0);
+cxt.moveTo(175,25);
+cxt.lineTo(200,0);
+cxt.moveTo(200,25);
+cxt.lineTo(225,0);
+cxt.moveTo(225,25);
+cxt.lineTo(250,0);
+cxt.moveTo(250,25);
+cxt.lineTo(275,0);
+cxt.stroke();
+
+// Рисуем прямоугольник
+
+cxt.beginPath();
+//cxt.fillStyle='#000000';
+cxt.strokeStyle = 'black';
+cxt.lineWidth = 1;
+cxt.fillRect(105,300,25,75);
+cxt.strokeRect(105,300,25,75);
+cxt.strokeStyle='black';
+cxt.lineWidth=5;
+
+// Рисуем еще прямоугольник
+
+cxt.lineWidth = 1; 
+cxt.strokeStyle = 'black';
+cxt.strokeRect(175,200,25,75);
+
+    
+</script>
+
+</head>
+<body>
+</html>
